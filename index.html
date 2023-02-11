@@ -5,6 +5,11 @@
 [x] 3 images
 [x] a table
 [x] a form
+-- Week 8 CSS Coding Assignment
+[x] style the website created in Week 7 using CSS
+[x] use only external CSS file (no internal or inline styling)
+[x] every element must be styled
+[x] create style rules using class, id, and element selectors
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +18,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>After School Enrichment</title>
+    <link rel = "stylesheet" href = "styles.css">
 </head>
 <body>
+    <div class = "site-logo">
     <img height="150px"src="logo.PNG"/>
-    <h1>Town Elementary School</h1>
-    <h2>After School Enrichment Program</h2> 
-<div>
-    Menu Options:
+    </div>
+    
+    <div id="top-heading">
+        <h1>Town Elementary School</h1>
+        <h2>After School Enrichment Program</h2> 
+    </div>
+
+<div id = "below-heading">  
+<div class = "menu-block">
+    Menu Options: 
     <a href="index.html">Home</a>
     <a href="register.html">Register</a>
     <a href="chess.html">Chess</a>
@@ -28,14 +41,17 @@
     <a href="running.html">Running</a>
 </div>
 
-    <p>The Town Elementary School is offering an After School Enrichment Program for students in Grades 3 through 5. 
+    <p class = "p-text">The Town Elementary School is offering an After School Enrichment Program for students in Grades 3 through 5. 
     There is no cost to the student.  This program is funded by a grant. This is an 8 week program that will run from Monday, March 6 through Thursday, May 4. Note: There will be no classes during the week of Spring Recess.</p>
-    <h3>Class Details</h3>
-    <table>
+     
+    <table id = "classes">
+        <th></th>
+        <th>Class Details</th>
+        <th></th>
         <tr>
-            <th>Class Name |</th>
-            <th>Class Day | </th>
-            <th>Class Size Limit</th>
+            <th>Class Name</th>
+            <th>Class Day</th>
+            <th>Size Limit</th>
         </tr>
         <tr>
             <td>Coding</td>
@@ -58,10 +74,11 @@
             <td>10</td>
         </tr>
     </table>
+</div>
     
-    <h3>Ready to Register?</h3>
-    <a href="register.html">Register</a>
-    
-    
-</body>
-</html>
+    <div id = "reg-button">
+        <a href="register.html" id = "button">Click Here to Register</a>
+        </div>
+        </div> 
+        </body>
+        </html>
